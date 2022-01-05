@@ -151,7 +151,6 @@ img {
 }
 .header-contact-link {
   display: flex;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -162,27 +161,16 @@ img {
   color: var(--main-text-color);
 }
 
-.header-contact-link.mail::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
+.contact-icon {
   margin-right: 10px;
-}
-
-.header-contact-link.tel::before {
-  content: '';
-  display: block;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
-  margin-right: 10px;
+  fill: currentColor;
 }
 
 .current,
 .header-contact-link:hover,
-.header-contact-link:focus {
+.header-contact-link:focus,
+.icon-contact:hover,
+.icon-contact:focus {
   color: var(--accent-color);
 }
 
@@ -254,32 +242,14 @@ img {
   width: 270px;
 }
 
-.feature-list-item::before {
-  content: '';
-  display: block;
+.feature-box-icon {
+  display: flex;
   height: 120px;
-  background-size: 70px;
-  background-position: center;
-  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
   background-color: var(--ex-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
 }
 
 .feature-list-item + .feature-list-item {
@@ -321,10 +291,11 @@ img {
 .product-list-item + .product-list-item {
   margin-left: 30px;
 }
-/* .product-list-img {
+
+/* .product-list-img{
 } */
 
-/* ---------Наша команда styles----------- */
+/* ---------Наша команда styles------------*/
 
 .team {
   background-color: var(--ex-bg-color);
@@ -373,6 +344,32 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--external-color);
 }
 
 /* -----------Clients styles--------------- */
