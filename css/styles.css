@@ -151,6 +151,7 @@ img {
 }
 .header-contact-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -179,12 +180,9 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
   background-color: var(--bg-color);
   text-align: center;
-
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -370,6 +368,7 @@ img {
 .team-social-link:focus {
   background-color: var(--accent-color);
   fill: var(--external-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* -----------Clients styles--------------- */
@@ -400,7 +399,6 @@ img {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 32px 16px;
 }
 
 .client-icon {
@@ -480,7 +478,11 @@ img {
   margin-bottom: 0;
 }
 
-.project-list-item:hover {
+.project-list-link {
+  display: block;
+}
+
+.project-list-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -511,16 +513,14 @@ img {
 /* -------------footer styles------------- */
 
 .footer {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color);
 }
 
 .footerflex {
   display: flex;
-  justify-content: space-start;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo-white {
@@ -554,14 +554,11 @@ img {
   color: var(--main-text-color);
 }
 
-.footer-box-addr {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+/* .footer-box-addr {
+  
+} */
 
 .footer-box-social {
-  padding-top: 72px;
-  padding-bottom: 100px;
   margin-left: 70px;
 }
 
